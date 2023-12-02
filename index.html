@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* same font in every element */
+    * {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+        .container{
+            /* border:2px solid purple; */
+            width: 60%; 
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            margin:auto;
+        }
+        
+        /* left box */
+        .child{
+            padding:2%;
+            display: grid;
+            gap: 20px;
+        }
+
+     
+
+        .child > .profile {
+            /* border:2px solid green; */
+            width: 160px;  
+            margin-top: 5%;
+         }
+
+         .child > .profile >img {
+            position:relative;
+            width: 200%;
+            
+         }
+        
+
+         .child > .logo{
+            /* border:2px solid green; */
+            width: 90%;  
+            height:400px; 
+            margin: auto;
+            margin-bottom: 2%;
+            
+         }
+
+         .child > .logo > img{
+            width: 100%;
+            height: 100%;
+         }
+
+         /* Providing Background-color to left child, inside the container */
+        .container > :nth-child(1) {
+            background-color: rgb(144, 27, 27);
+}
+
+        .container > :nth-child(1){
+            width:80%;
+        }
+         /* right box */
+        
+         /* 2nd div  */
+        .container > :nth-child(2){
+            display: block;
+            width: 112%;
+            margin-left: -16%;
+            background-color: rgb(217, 150, 27);
+            /* position: relative; */
+            
+        }
+
+         /* heading */
+        :nth-child(2) > .name{
+            /* border: 2px solid greenyellow; */
+            width:90%;
+            height:160px;
+            margin: auto;
+}
+
+hr{
+    border: 2px solid rgb(122, 27, 27);
+    width: 100%;
+    margin-left: -2%;
+    padding-right: 3%;
+
+}
+
+/* left side every 1 point should be yellow */
+.yllw {
+  color: gold;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: underline;
+  margin: auto;
+}
+
+
+/* every list target in left box */
+.education, .hobbies{
+    margin-left: 15%;
+}
+
+ul > p{
+    margin: auto; 
+    text-decoration: underline;
+}
+
+ul, p{
+    /* margin-left: 10%; */
+    color: white;
+    /* font-size: 17px;/ */
+    font-weight: 600;
+}
+
+.address, .phNo {
+    padding-left: 10%;
+    
+}
+
+.phNo{
+    margin-top: -5%;
+}
+
+
+
+
+/* right box stuff */
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    
+}
+
+h1::first-letter{
+    color: rgb(171, 33, 33);
+    font-size: 80px;
+    font-style: italic;
+    
+}
+
+/* list and para of right box */
+.red{
+    color: rgb(152, 36, 36);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.intro {
+    font-size: 20px;
+}
+
+.experience{
+    font-size:18px;
+}
+
+/* iron man size  */
+.size{
+    font-size: 25px;
+}
+
+.exsize{
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+.box{
+    /* border:3px solid greenyellow; */
+    display: flex;
+    border-radius: 8px;
+    background-image: url("/footer-bg\ .jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box > img {
+    width:30%;
+}
+
+.childbox{
+            width: 90%;
+            /* border: 2px solid green;; */
+        }
+
+        .smallbox{
+            /* border: 1px solid rgba(0, 0, 0, 0.752); */
+            background-color: white;
+            width: 110%;
+            height: 10px;
+            margin-left: -5%;
+            margin-bottom: 5%;
+            
+        }
+
+        .powers{
+            /* border: 1px solid rgba(0, 0, 0, 0.855); */
+            width:90%;
+            height: 10px;
+            background-color: rgba(17, 216, 33, 0.619);
+        }
+
+
+        .box > .childbox > p{
+            text-align: center;
+            line-height: 0px;
+            margin-top: 20px;
+            padding-top:16px;
+            line-height: 2px;
+        }
+        .box > :nth-child(3){
+            padding: 8%;
+        }
+
+        
+ /* ******************************************************************************************** */
+        @media screen and (min-width: 768px) and (max-width:990px) {
+        
+            .container{
+            /* border:2px solid purple; */
+            width: 200%;   
+            grid-template-columns: repeat(1, 1fr);
+            
+        }
+
+        .container > :nth-child(1){
+            /* border: 2px solid red; */
+            width: 96%;
+            padding:2%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+        }
+
+        .child > .profile {
+            /* border:2px solid green; */
+            width: 200%;  
+            height: 100px;
+            margin-left: -5%;
+            margin-right: 15%;
+            margin-top: 1%;
+        }
+
+        
+        .child > .profile >img {
+            position:relative;
+            width: 140%;
+            height: 550px;
+
+        }
+
+        .child > .logo{
+            /* border:2px solid green; */
+            width: 100%;  
+            height:400px; 
+            margin: auto;
+        }
+
+        .child > .logo > img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .education, .hobbies{
+        margin-left: 1%;
+        }
+        
+        .phNo{
+    margin-top: 1%;
+    
+}
+
+.container > :nth-child(2){
+            display: block;
+            width: 111%;
+            margin-left: auto;
+            background-color: rgb(217, 150, 27);  
+        }         
+}
+
+/* small screen */
+         @media screen and (max-width:768px) { 
+            .container{
+            /* border:2px solid purple; */
+            width: 200%;   
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        
+        .container > :nth-child(1){
+            /* border: 2px solid red; */
+            width: 111%;
+            padding:2%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: auto;
+
+        }
+
+        .child > .profile {
+            /* border:2px solid green; */
+            width: 100%;  
+            height: 100px;
+            margin-left: 0%;
+            margin-right: 15%;
+            margin-top: 1%;
+         }
+
+         
+         .child > .profile >img {
+            position:relative;
+            width: 50%;
+            height: 500px;
+            margin-left: 35%;
+        
+        }
+
+        .address,  .phNo{
+            padding-left: 4%;
+    
+}
+
+         .child > .logo{
+            /* border:2px solid green; */
+            width: 80%;  
+            height:250px; 
+        }
+
+        .child > .logo > img{
+            width: 100%;
+            height: 108%;
+        }
+
+        .education, .hobbies{
+        margin-left: 1%;
+        }
+
+        .phNo{
+    margin-top: 1%;
+    margin-right: 5%;
+    
+}
+
+        .container > :nth-child(2){
+            display: block;
+            width: 111%;
+            margin-left: auto;
+            background-color: rgb(217, 150, 27);
+            /* position: relative; */
+            
+        }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- leftbox -->
+        <div class="child">
+            <div class="profile">
+                <img src="/logo.png" alt="">
+            </div>
+
+              <!-- Education -->
+              <ul class="education">
+                <p class="yllw">Education</p>                <li>Electric Engineer</li>
+                <li>Master in Physics</li>
+                <li>MIT Graduated</li>
+            </ul>
+
+            
+            <!-- Hobbies -->
+            <ul class="hobbies">
+                <p class="yllw">Hobbies</p>
+                <li>Party</li>
+                <li>Parachuting</li>
+                <li>Skiing</li>
+            </ul>
+
+             <!-- Address -->
+             <p class="address "> <strong class="yllw">Address :</strong> 10880 Malibu Point, California</p>
+
+                         <!-- Contact -->
+            <p class="phNo"><strong class="yllw">Contact :</strong> 212-970-4133</p>
+
+            <div class="logo">
+                 <img src="/cover1.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- right box -->
+        <div class="child ">
+            <div class="name"><h1>TONY STARK</h1></div>
+            <hr>
+
+            <!-- Brief Description about Tony -->
+            <!-- Skills -->
+            <div class="intro">
+                <p id="brief"> I'm honored to introduce myself as Tony Stark aka The <strong class="red size">IRON MAN</strong>. If there's a gap between the edge and unimmaginable possibility, Well I can say that I am that bridge who can fill this gap and at the same time cracking some jokes to give a belly laugh & nice piece of advice to my colleages.</p>
+            </div>
+
+            <!-- Skills -->
+            <ul id="skills">
+                <p class="red">Skills</p>
+                <li>
+                    Proficient Scientist & Engineer
+                </li>
+                <li>
+                    Genius Level Intellect
+                </li>
+                <li>Building Armours</li>
+            </ul>
+
+            <!-- Accomplishments -->
+            <ul id="accomplishments">
+                <p class="achieve red">Accomplishments</p>
+                <li>Built Time-Travel GPS</li>
+                <li>Nano-Technology</li>
+                <li>Made A Small Arc-Reactor</li>
+            </ul>
+<br><br>
+            <!-- Experience -->
+            
+            <p class="experience ">
+                <strong class="red exsize">Experience :-</strong> &nbsp;
+                I have a Master's degree in both electrical engineering and physics, and as a young boy, I was heralded as a child genius. I am capable of using my initiative and thinking of my feet, and I am always capable of finding an innovative solution to any problems which may arise.
+                Throughout my career, I've been dedicated to using technology to improve the world and safeguard humanity.
+                I embarked on my journey by taking the reins of Stark Industries, My work experience reflects a transition from self-serving pursuits to a more altruistic approach, ultimately leading me to co-found the Avengers and dedicate my intellect to protecting the world.
+            </p>
+
+            <div class="box">
+                <img src="/logo1.png" alt="">
+                <div class="childbox"> 
+                    <p>Skills</p>
+                    <p>Battery</p>
+                    <p>Damage</p></div>
+            
+                   <div class="childbox">
+                    <div class="smallbox">
+                        <div class="powers"></div>
+                    </div>
+                    <br>
+                    
+                    <div class="smallbox">
+                        <div class="powers"></div>
+                    </div>
+                    <br>
+                    <div class="smallbox">
+                        <div class="powers"></div>
+            </div>
+    
+        </div>
+
+
+    </div>
+
+</body>
+</html>
